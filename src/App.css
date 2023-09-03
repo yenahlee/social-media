@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9983cf;
+}
+
+.home-link {
+  color: white;
+  padding-left: 20px;
+}
+
+.login-link {
+  color: white;
+  padding-left: 20px;
+}
+
+.create-link {
+  color: white;
+  padding-left: 20px;
+}
+
+.todo-link {
+  color: white;
+  padding-left: 20px;
+}
+
+.login-div {
+  margin-top: 100px;
+}
+
+.main-div {
+  margin-top: 100px;
+}
+
+.google {
+  border: none;
+  background-color: #cea7e0;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Poppins';
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-right: 40px;
+}
+
+.user p {
+  color: white;
+  padding-right: 10px;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  padding-right: 15px;
+}
+
+.user button {
+  border: none;
+  background-color: #cea7e0;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 20px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.submit-form {
+  width: 400px;
+  background-color: #fde9ea;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.submit-form input::placeholder,
+.submit-form textarea::placeholder {
+  font-family: "Poppins";
+}
+
+
+.submit-form input[type="submit"] {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 7px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submit-form input:focus,
+.submit-form textarea:focus {
+  font-family: "Poppins";
+}
+
+.submit-form input[placeholder="Title..."],
+.submit-form textarea {
+  width: 200px;
+}
+
+.post-box {
+  width: 300px;
+  height: auto; 
+  padding: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+  margin: 8px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.like-button.white-bg {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.new-todo-form {
+  margin-top: 20px;
+}
+
+.new-item {
+  margin-right: 20px;
+}
+
+.add-btn {
+  border: none;
+  background-color: #cea7e0;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 20px;
+  padding: 4px 9px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-label input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%; /* Make it round */
+  margin-right: 10px;
+  position: relative;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.todo-item {
+  margin-top: 5px;
+}
+
+/* Add pink background and checkmark when checkbox is checked */
+.todo-label input[type="checkbox"]:checked + .custom-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+/* Add line-through and opacity when todo is completed */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+ul.todo-list {
+  list-style: none;
+}
+
+.delete-btn {
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.todo-container {
+  border: 1px black;
+
+}
+
